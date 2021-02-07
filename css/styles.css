@@ -69,6 +69,10 @@ h3{
     padding: 0;
 }
 
+.contact-info > li > i{
+    padding-right: 5px;
+} 
+
 .icons{
     display: flex;
     list-style: none;
@@ -108,7 +112,7 @@ h3{
 
 .icons-header li > i{
     position: relative;
-    top: 7px;
+    top: 5px;
 }
 
 .icons-footer{
@@ -160,7 +164,7 @@ h3{
     }
 }
 
-/**Presentacion**/
+/**Presentation**/
 
 .presentation{
     margin-top: 220px;
@@ -215,7 +219,6 @@ h3{
     margin: 0 auto;
 }
 
-
 .timeline::after {
     content: '';
     position: absolute;
@@ -259,7 +262,7 @@ h3{
     content: " ";
     height: 0;
     position: absolute;
-    top: 10px;
+    top: 20px;
     width: 0;
     z-index: 1;
     right: 20px;
@@ -272,7 +275,7 @@ h3{
     content: " ";
     height: 0;
     position: absolute;
-    top: 10px;
+    top: 20px;
     width: 0;
     z-index: 1;
     left: 20px;
@@ -290,6 +293,7 @@ h3{
     position: relative;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+    top: 10px;
 }
 
 .content > h3,h4,p{
@@ -304,7 +308,7 @@ h3{
 }
 
 .content > h4,p{
-    padding: 10px;
+    padding: 5px;
 }
 
 @media (min-width: 768px) {
@@ -362,7 +366,7 @@ h3{
     margin-right: 5px;
 }
 
-/**Barras de progreso**/
+/**Progress bars**/
 
 .progress-bar {
     border: 2px solidrgb(85, 7, 7);
@@ -404,7 +408,7 @@ h3{
 /**Modal**/
 
 .background{
-    top: 1500px;
+    top: 1200px;
     left: 0;
     background: rgba(0, 0, 0, 0.226);
     position: absolute;
@@ -428,6 +432,7 @@ h3{
     border-radius: 30px;
 
 }
+
 .close{
     background: var(--red);
     position: absolute;
@@ -442,9 +447,9 @@ h3{
     align-items: center;
     cursor: pointer;
 }
+
 .title{
     display: flex;
-    color: white;
     background-color: var(--red);
     height: 100%;
     border-radius:25px;
@@ -453,6 +458,11 @@ h3{
     width: 100%;
     font-size: 40px;
 }
+
+.title > h2{
+    color: white;
+}
+
 .message{            
    padding: 10px 30px;
 }
@@ -467,7 +477,4 @@ footer{
 
 footer p{
     color: white;
-}
-.clearfix {
-    clear: both;
 }

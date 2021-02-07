@@ -39,32 +39,53 @@
             openModal(creativity);
         });
 
-        let spanish = document.getElementById("spanish");
-        spanish.addEventListener('click', e=>{
-            openModal(spanish);
+        let html_css = document.getElementById("html_css");
+        html_css.addEventListener('click', e=>{
+            openModal(html_css);
         });
 
-        let english = document.getElementById("english");
-        english.addEventListener('click', e=>{
-            openModal(english);
+        let java = document.getElementById("java");
+        java.addEventListener('click', e=>{
+            openModal(java);
         });
 
-        
+        let c_sharp = document.getElementById("c-sharp");
+        c_sharp.addEventListener('click', e=>{
+            openModal(c_sharp);
+        });
+
+        let js = document.getElementById("js");
+        js.addEventListener('click', e=>{
+            openModal(js);
+        });
+
         let close = document.getElementsByClassName("close");
         close[0].addEventListener('click', e=>{
             document.getElementsByClassName("background")[0].style.display="none";
+            document.getElementsByClassName("title")[0].innerHTML = " ";
         });
+
+        
 
         function openModal(skill){
 
             let fondo = document.getElementsByClassName("background");
+
             fondo[0].style.display="block";
 
             let title = document.getElementsByClassName("title")[0];
+
             var string = "";
+
             string = skill.getElementsByClassName("title-skill")[0].innerHTML;
-            let text = document.createTextNode(''+string);
-            title.append(text);
+
+            let h2 = document.createElement("h2");
+
+            let text = document.createTextNode(string);
+
+            h2.append(text);
+
+            title.append(h2);
 
             return false;
         };  
